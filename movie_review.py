@@ -33,7 +33,7 @@ for page in range(1, 500):
     time.sleep(0.5)
 
 columns_name = ["movie", "sentence", "score"]
-with open("samples.csv", "w", newline="", encoding='utf8') as f:
+with open(" movie_review.csv", "w", newline="", encoding='utf8') as f:
     write = csv.writer(f)
     write.writerow(columns_name)
     write.writerows(review_data)
